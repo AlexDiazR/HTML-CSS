@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.flex-parent {
+  height: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-child {
+  height: 100px;
+  width: 100px;
+}
+
+.flex-child.left {
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-child.right{
+  background-color: yellow;
+}
+
+.mini{
+  background-color: blue;
+  height: 20px;
+  width: 20px;
+}
+
+.navbar{
+  background-color: black;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar .shopping-cart{
+  background-color: green;
+  height: 44px;
+  width: 44px;
+  color: white;
+  font-size: 45px;
+}
+
+.hero{
+  height: 500px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('https://images.unsplash.com/photo-1483347756197-71ef80e95f73?dpr=1&auto=format&fit=crop&w=1080&h=721&q=80&cs=tinysrgb&crop=');
+  background-size: cover;
+}
+
+.benefits{
+  padding: 20px;
+}
+
+.title{
+  color: white;
+  font-size: 40px;
+}
+
+.footer{
+  background-color: black;
+  display: flex;flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-item{
+  width: 100%;
+  text-align: center;
+}
+
+.footer-item.contact{
+  color: white;
+  font-size: 35px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.footer-item.credits{
+  color: white;
+  font-size: 35px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media (min-width: 1024px){
+  .content .benefits{
+    vertical-align: top;
+    display: inline-block;
+    width: calc(50% - 44px)
+  }
+
+  .content .blog{
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+  }
+}
